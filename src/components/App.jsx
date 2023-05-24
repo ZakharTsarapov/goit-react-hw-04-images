@@ -56,7 +56,7 @@ export default function App() {
         }
       })
       .catch(error => {
-        rejectedStatusHandler();
+        // rejectedStatusHandler();
         showQueryError(error);
         return
       });
@@ -105,9 +105,9 @@ export default function App() {
   };
 
  const onLoadBtnClick = () => {
-   if (totalImages > images.length) {
+   
      setPage(prevPage => prevPage + 1);
-   }
+   
  };
 
   const toggleModal = largeImageURL => {
